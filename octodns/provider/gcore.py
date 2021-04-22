@@ -192,7 +192,6 @@ class GCoreProvider(BaseProvider):
                 for resource_record in record["resource_records"]
                 for rr_value in resource_record["content"]
             ],
-            "filter_set_id": 10067,
         }
 
     _data_for_A = _data_for_single
@@ -249,6 +248,7 @@ class GCoreProvider(BaseProvider):
             "resource_records": [
                 {"content": [value]} for value in record.values
             ],
+            "filter_set_id": 10067,
         }
 
     _params_for_A = _params_for_single
